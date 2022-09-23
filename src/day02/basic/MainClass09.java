@@ -15,23 +15,21 @@ package day02.basic;
 
 public class MainClass09 {
 	public static void main(String[] args) {
-		int num = 75;
+		int score = 75;
+		String result = null;
 		
-		if(num >= 90) {
-			System.out.println("수");
+		if(score >= 90) {
+		    result = "수";
+		}else if(score >= 80) {
+			result = "우";
+		}else if(score >= 70) {
+			result = "미";
+		}else if(score >= 60) {
+			result = "양";
+		}else  {
+			result = "가";			
 		}
-		else if(num >= 80 ) {
-			System.out.println("우");
-		}
-		else if(num >= 70 ) {
-			System.out.println("미");
-		}
-		else if(num >= 60) {
-			System.out.println("양");
-		}
-		else {
-			System.out.println("가");
-		}
+		System.out.println("성적 : " + result);
 	}
-
+		
 }
